@@ -1,0 +1,57 @@
+/* Estilos Globales y Clases Utilitarias */
+body { 
+    -webkit-font-smoothing: antialiased; 
+}
+
+/* Paneles de Cristal (Glassmorphism) */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Utilidades de Texto y Hover */
+.text-shadow-sm { 
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+}
+
+.hover-lift { 
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; 
+}
+
+.hover-lift:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 20px 40px -5px rgba(0,0,0,0.1); 
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    video, iframe {
+        display: none !important;
+    }
+    a[href="#contexto"] {
+        display: none !important;
+    }
+    section, .grid > div {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    .text-white {
+        color: black !important;
+    }
+    .bg-gradient-to-b, .bg-gradient-to-r, .bg-gradient-to-br {
+        background: white !important;
+        border: 1px solid #e5e7eb !important;
+    }
+    img {
+        max-width: 100% !important;
+    }
+}
