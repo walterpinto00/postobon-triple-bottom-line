@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postobón - Reporte de Sostenibilidad TBL</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            darkGreen: '#064E3B',
+                            lightGreen: '#10B981',
+                            red: '#E31837',
+                            gray: '#F9FAFB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { -webkit-font-smoothing: antialiased; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .text-shadow-sm { text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        .hover-lift { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -5px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white selection:bg-brand-lightGreen selection:text-white overflow-x-hidden">
+
+    <!-- 1. SECCIÓN HERO -->
+    <section class="relative h-screen w-full flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=2000" alt="Naturaleza y Agua Pura" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
+            <!-- Etiqueta corregida a SENA -->
+            <span class="glass-panel text-white text-xs md:text-sm font-bold tracking-widest uppercase px-6 py-2 rounded-full mb-8 border-brand-lightGreen/50 bg-brand-darkGreen/40">
+                Proyecto SENA - Análisis Estratégico
+            </span>
+            
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6 leading-tight text-shadow-sm">
+                Postobón y el Modelo<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-lightGreen to-emerald-200">Triple Bottom Line</span>
+            </h1>
+            
+            <p class="text-lg md:text-2xl text-gray-200 font-light mb-12 max-w-3xl text-shadow-sm leading-relaxed">
+                Estrategia Corporativa: Uno más Todos. Un análisis profundo de cómo la principal compañía de bebidas de Colombia equilibra su crecimiento económico con el desarrollo social y la protección ambiental.
+            </p>
+            
+            <span class="text-white/60 text-sm tracking-widest uppercase mb-4">Integrante 1</span>
+        </div>
+
+        <a href="#contexto" class="absolute bottom-10 z-10 text-white flex flex-col items-center animate-bounce opacity-80 hover:opacity-100 transition-opacity">
+            <span class="text-xs tracking-widest uppercase mb-2">Deslizar hacia abajo</span>
+            <i class="fa-solid fa-chevron-down text-xl"></i>
+        </a>
+    </section>
+
+    <!-- 2. SECCIÓN CONTEXTO Y VIDEO -->
+    <section id="contexto" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight">
+                        Contextualización<br>del Mercado
+                    </h2>
+                    
+                    <!-- ESQUEMA VISUAL EN LUGAR DE PÁRRAFOS LARGOS -->
+                    <div class="space-y-6 mb-8 relative before:absolute before:inset-y-0 before:left-6 before:w-px before:bg-gray-200">
+                        
+                        <div class="relative flex items-start group">
+                            <div class="w-12 h-12 bg-white border-2 border-brand-lightGreen rounded-full flex items-center justify-center text-brand-lightGreen text-lg z-10 shrink-0 group-hover:bg-brand-lightGreen group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div class="ml-6 bg-brand-gray p-4 rounded-xl border border-gray-100 flex-1 shadow-sm">
+                                <h4 class="font-bold text-gray-900 text-lg">Liderazgo Histórico</h4>
+                                <p class="text-gray-500 font-light text-sm mt-1">Más de 118 años siendo el motor fundamental del mercado de bebidas en Colombia.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start group">
+                            <div class="w-12 h-12 bg-white border-2 border-brand-red rounded-full flex items-center justify-center text-brand-red text-lg z-10 shrink-0 group-hover:bg-brand-red group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div class="ml-6 bg-brand-gray p-4 rounded-xl border border-gray-100 flex-1 shadow-sm">
+                                <h4 class="font-bold text-gray-900 text-lg">Alcance Nacional</h4>
+                                <p class="text-gray-500 font-light text-sm mt-1">Presencia operativa masiva en el <strong>90% del territorio</strong> colombiano.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start group">
+                            <div class="w-12 h-12 bg-white border-2 border-brand-darkGreen rounded-full flex items-center justify-center text-brand-darkGreen text-lg z-10 shrink-0 group-hover:bg-brand-darkGreen group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <div class="ml-6 bg-brand-gray p-4 rounded-xl border border-gray-100 flex-1 shadow-sm">
+                                <h4 class="font-bold text-gray-900 text-lg">Visión Sostenible</h4>
+                                <p class="text-gray-500 font-light text-sm mt-1">"Tomarnos la vida en serio": La sostenibilidad es requisito indispensable, no una opción.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Video integrado en vivo desde archivo local -->
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-black" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="aspect-w-16 aspect-h-9" style="padding-bottom: 56.25%; position: relative;">
+                        <!-- Reproductor nativo HTML5 usando el video descargado localmente -->
+                        <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 1.5rem; object-fit: cover;">
+                            <source src="En Postobón construimos valor para la sociedad.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video local.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN CORE BUSINESS -->
+    <section class="py-24 md:py-32 bg-brand-gray relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-8">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="text-brand-lightGreen text-sm font-semibold tracking-widest uppercase mb-3 block">Integrante 2</span>
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">Actividad Económica</h2>
+                <p class="mt-4 text-xl text-gray-500 max-w-3xl mx-auto">La operación masiva y compleja de Postobón explicada en 3 frentes visuales.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-gradient-to-b from-white to-gray-50 rounded-[2rem] hover:-translate-y-3 transition-all duration-500 border border-gray-100 shadow-xl hover:shadow-2xl overflow-hidden flex flex-col relative group" data-aos="fade-up" data-aos-delay="0">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-brand-darkGreen to-brand-lightGreen transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div class="h-48 overflow-hidden">
+                        <!-- Imagen 1 corregida (Planta de producción/tecnología en lugar de dinero) -->
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Planta Industrial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex-1 relative">
+                        <div class="w-14 h-14 bg-gradient-to-br from-brand-lightGreen to-brand-darkGreen rounded-xl flex items-center justify-center text-white text-2xl mb-6 shadow-md transform group-hover:rotate-6 transition-transform duration-300">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-darkGreen transition-colors">Producción Industrial</h3>
+                        <p class="text-gray-500 font-light text-base leading-relaxed">
+                            Sector secundario. Manufactura en megaplantas de alta tecnología, garantizando la inocuidad y abastecimiento masivo para todo el país.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-gradient-to-b from-white to-gray-50 rounded-[2rem] hover:-translate-y-3 transition-all duration-500 border border-gray-100 shadow-xl hover:shadow-2xl overflow-hidden flex flex-col relative group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-brand-darkGreen to-brand-lightGreen transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=800" alt="Logística" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex-1 relative">
+                        <div class="w-14 h-14 bg-gradient-to-br from-brand-lightGreen to-brand-darkGreen rounded-xl flex items-center justify-center text-white text-2xl mb-6 shadow-md transform group-hover:rotate-6 transition-transform duration-300">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-darkGreen transition-colors">Logística Nacional</h3>
+                        <p class="text-gray-500 font-light text-base leading-relaxed">
+                            Sector terciario. Una de las redes de distribución más grandes de LATAM, llegando a grandes superficies y a las tiendas de barrio.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-gradient-to-b from-white to-gray-50 rounded-[2rem] hover:-translate-y-3 transition-all duration-500 border border-gray-100 shadow-xl hover:shadow-2xl overflow-hidden flex flex-col relative group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-brand-red to-orange-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div class="h-48 overflow-hidden bg-brand-gray flex items-center justify-center p-8 group-hover:bg-white transition-colors duration-500">
+                        <!-- Imagen 3 corregida: Logo local de Postobón -->
+                        <img src="Logo/Logo Postobon.webp" alt="Portafolio Postobón" class="w-full h-full object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex-1 relative">
+                        <div class="w-14 h-14 bg-gradient-to-br from-brand-red to-orange-400 rounded-xl flex items-center justify-center text-white text-2xl mb-6 shadow-md transform group-hover:-rotate-6 transition-transform duration-300">
+                            <i class="fa-solid fa-bottle-water"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-red transition-colors">Portafolio Masivo</h3>
+                        <p class="text-gray-500 font-light text-base leading-relaxed">
+                            Oferta multicategoría: gaseosas icónicas, aguas (Cristal), jugos (Hit), tés e hidratantes, adaptándose a las tendencias de bienestar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN PILAR ECONÓMICO Y SOCIAL -->
+    <section class="py-24 md:py-32 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-8">
+            
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-brand-lightGreen text-sm font-semibold tracking-widest uppercase mb-3 block">Integrante 3</span>
+            </div>
+
+            <!-- Block 1: Económico (Ahora con MUCHOS MÁS GRÁFICOS) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+                <div class="order-2 lg:order-1 relative" data-aos="fade-right">
+                    <div class="absolute -inset-4 bg-brand-gray rounded-[2.5rem] z-0 transform -rotate-3"></div>
+                    
+                    <!-- Grid de 3 Gráficos Económicos -->
+                    <div class="relative z-10 grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Crecimiento Financiero" class="w-full h-[240px] object-cover rounded-3xl shadow-xl col-span-2" />
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Análisis de mercado" class="w-full h-[200px] object-cover rounded-3xl shadow-lg" />
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800" alt="Rentabilidad" class="w-full h-[200px] object-cover rounded-3xl shadow-lg" />
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2" data-aos="fade-left">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-4">Pilar Económico</h2>
+                    <div class="my-6">
+                        <span class="block font-display text-5xl md:text-6xl font-bold text-brand-darkGreen tracking-tighter mb-2">$41.959 <span class="text-3xl text-gray-400 font-medium">Millones</span></span>
+                    </div>
+                    <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">
+                        <strong>Inversión estratégica en sostenibilidad.</strong> La viabilidad de Postobón se asegura no solo vendiendo bebidas, sino implementando el <em>Capitalismo Consciente</em>. Esta inversión millonaria garantiza la rentabilidad y creación de valor compartido a largo plazo.
+                    </p>
+                    
+                    <!-- Tarjetas de métricas económicas -->
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-brand-gray p-4 rounded-2xl border border-gray-100">
+                            <i class="fa-solid fa-arrow-trend-up text-brand-red text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-900">Crecimiento</h4>
+                            <p class="text-sm text-gray-500">Expansión continua de ingresos.</p>
+                        </div>
+                        <div class="bg-brand-gray p-4 rounded-2xl border border-gray-100">
+                            <i class="fa-solid fa-handshake text-brand-red text-2xl mb-2"></i>
+                            <h4 class="font-bold text-gray-900">Red de Valor</h4>
+                            <p class="text-sm text-gray-500">+12.000 proveedores locales apoyados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block 2: Social -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-1 lg:order-1" data-aos="fade-right">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-8">Pilar Social</h2>
+                    <p class="text-lg text-gray-600 font-light leading-relaxed mb-8">
+                        Postobón asume un compromiso irrenunciable con el bienestar de Colombia, enfocando su impacto en el desarrollo rural, la educación, el fomento del deporte y la generación masiva de trabajo digno.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start group">
+                            <div class="w-16 h-16 bg-gradient-to-br from-brand-lightGreen to-brand-darkGreen rounded-2xl flex items-center justify-center text-white text-2xl shadow-md mr-6 shrink-0 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div>
+                                <span class="block font-display text-4xl font-bold text-gray-900 tracking-tighter mb-2">19.450</span>
+                                <p class="text-gray-500 font-light leading-relaxed">Empleos directos e indirectos generados, dinamizando la economía de las regiones donde opera Postobón.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start group">
+                            <div class="w-16 h-16 bg-gradient-to-br from-brand-red to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl shadow-md mr-6 shrink-0 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-apple-whole"></i>
+                            </div>
+                            <div>
+                                <span class="block font-display text-4xl font-bold text-gray-900 tracking-tighter mb-2">1.745</span>
+                                <p class="text-gray-500 font-light leading-relaxed">Familias agrícolas apoyadas por <strong>HIT Social</strong>. Postobón les asegura la compra de cosechas a precios justos y sin intermediarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-2 lg:order-2 relative" data-aos="fade-left">
+                    <div class="absolute -inset-4 bg-brand-lightGreen/10 rounded-[2.5rem] z-0 transform rotate-3"></div>
+                    <!-- Imagen de Pilar Social hiper-segura de niños/comunidad/educación -->
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800" alt="Impacto Social y Comunidad" class="relative z-10 w-full h-[550px] object-cover rounded-[2rem] shadow-2xl" />
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 5. SECCIÓN PILAR AMBIENTAL (Integrante 4) -->
+    <section class="py-24 md:py-32 bg-brand-darkGreen text-white relative">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#10B981 1px, transparent 1px); background-size: 40px 40px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-8 relative z-10">
+            <div class="text-center mb-24" data-aos="fade-up">
+                <span class="text-brand-lightGreen text-sm font-semibold tracking-widest uppercase mb-3 block">Integrante 4</span>
+                <h2 class="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Pilar Ambiental</h2>
+                <p class="text-lg text-emerald-100 max-w-4xl mx-auto leading-relaxed">
+                    La estrategia "Postobón BIO" rige todas las acciones ambientales. Su meta es desvincular el uso intensivo de recursos naturales del crecimiento productivo, operando bajo un modelo de economía circular y transición energética.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 text-center mb-16">
+                <!-- Imagen Ambiental Grande 1 -->
+                <div class="rounded-3xl overflow-hidden shadow-2xl h-64 relative group" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=800" alt="Paneles Solares" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkGreen via-brand-darkGreen/50 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-6 inset-x-0">
+                        <span class="block font-display text-5xl font-bold text-white tracking-tighter">100%</span>
+                        <p class="text-base text-emerald-100 font-medium px-4">Operación Carbono Neutro en plantas principales (Yumbo, Malambo).</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen Ambiental Grande 2 -->
+                <div class="rounded-3xl overflow-hidden shadow-2xl h-64 relative group" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800" alt="Reciclaje" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkGreen via-brand-darkGreen/50 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-6 inset-x-0">
+                        <span class="block font-display text-5xl font-bold text-white tracking-tighter">163K</span>
+                        <p class="text-base text-emerald-100 font-medium px-4">Toneladas de envases PET 100% reciclados reincorporados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12 text-center">
+                <div class="p-8 bg-white/5 rounded-3xl backdrop-blur-sm border border-white/10 shadow-xl hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-droplet text-5xl text-brand-lightGreen mb-6"></i>
+                    <span class="block font-display text-6xl font-bold text-white tracking-tighter mb-4">-48%</span>
+                    <p class="text-base text-emerald-100/90 font-medium leading-relaxed">Reducción histórica en el consumo de <strong>agua por cada litro</strong> de bebida producida mediante alta tecnología de recirculación (desde 2013).</p>
+                </div>
+                
+                <div class="p-8 bg-white/5 rounded-3xl backdrop-blur-sm border border-white/10 shadow-xl hover:bg-white/10 transition-colors" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-solar-panel text-5xl text-brand-lightGreen mb-6"></i>
+                    <span class="block font-display text-6xl font-bold text-white tracking-tighter mb-4">660+</span>
+                    <p class="text-base text-emerald-100/90 font-medium leading-relaxed">Vehículos integrados a su masivo programa de <strong>movilidad sostenible</strong> (flotas de camiones eléctricos y de bajas emisiones logísticas).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECCIÓN CONCLUSIONES (Integrante 5) -->
+    <section class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-8">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="text-brand-lightGreen text-sm font-semibold tracking-widest uppercase mb-3 block">Integrante 5</span>
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">Conclusiones y Aprendizajes</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="p-8 rounded-[2rem] bg-brand-gray border border-gray-100 transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-2 relative overflow-hidden" data-aos="fade-up" data-aos-delay="0">
+                    <div class="absolute -right-6 -top-6 text-brand-red opacity-10 text-9xl font-display font-bold">1</div>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-red text-xl mb-6 shadow-sm border border-red-100">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h4 class="font-display text-xl font-bold text-gray-900 mb-4">Ética Corporativa</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Retribuir valor no es caridad.
+                        </li>
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Es una <strong>obligación ética</strong>.
+                        </li>
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Protege el entorno y la comunidad.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="p-8 rounded-[2rem] bg-brand-gray border border-gray-100 transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-2 relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -right-6 -top-6 text-brand-red opacity-10 text-9xl font-display font-bold">2</div>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-red text-xl mb-6 shadow-sm border border-red-100">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="font-display text-xl font-bold text-gray-900 mb-4">Estrategia Rentable</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Sostenibilidad = Excelente negocio.
+                        </li>
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Reciclaje PET reduce costos.
+                        </li>
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Garantiza la <strong>supervivencia comercial</strong>.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="p-8 rounded-[2rem] bg-brand-gray border border-gray-100 transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-2 relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -right-6 -top-6 text-brand-red opacity-10 text-9xl font-display font-bold">3</div>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-red text-xl mb-6 shadow-sm border border-red-100">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="font-display text-xl font-bold text-gray-900 mb-4">El Futuro Productivo</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Equilibrio para profesionales SENA.
+                        </li>
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Producción intensiva sostenible.
+                        </li>
+                        <li class="flex items-start text-sm text-gray-500 font-light">
+                            <i class="fa-solid fa-check text-brand-lightGreen mt-1 mr-2"></i> Impulsada por <strong>economía circular</strong>.
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER (Bibliografía - Integrante 5) -->
+    <footer class="bg-[#0f172a] pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-8">
+            <div class="mb-16">
+                <h3 class="font-display text-2xl font-bold text-white mb-8">Fuentes y Bibliografía</h3>
+                <ul class="space-y-4 text-gray-400 font-light">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-arrow-right text-brand-lightGreen mt-1.5 mr-4 text-sm"></i>
+                        <span><strong>Postobón S.A. (2025).</strong> Informe de Sostenibilidad 2024 - Uno más Todos. Documento Corporativo.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-arrow-right text-brand-lightGreen mt-1.5 mr-4 text-sm"></i>
+                        <span><strong>CECODES (2025).</strong> Casos Empresariales: Estrategia de Sostenibilidad de Postobón y su impacto en Colombia.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-arrow-right text-brand-lightGreen mt-1.5 mr-4 text-sm"></i>
+                        <span><strong>Naciones Unidas Colombia.</strong> Los Objetivos de Desarrollo Sostenible (ODS) y la gestión del agua en el sector privado.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-10 text-center flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-light">
+                <p>Presentación interactiva TBL realizada por aprendices del <strong>SENA</strong>.</p>
+                <p class="mt-4 md:mt-0">Caso de Estudio: Postobón S.A.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+</body>
+</html>
